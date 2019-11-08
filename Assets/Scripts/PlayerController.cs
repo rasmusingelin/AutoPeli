@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         this.Horizontal = Input.GetAxis("Horizontal");
 
         this.transform.Translate(this.transform.forward * Speed * this.Vertical * Time.deltaTime);
-        this.transform.Rotate(new Vector3(0, 30 * this.Horizontal * Time.deltaTime, 0));
+        this.transform.Rotate(new Vector3(0, 25 * this.Horizontal * Time.deltaTime, 0));
     }
 }
  
